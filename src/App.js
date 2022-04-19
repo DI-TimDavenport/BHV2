@@ -1,24 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import Home from "./Components/Home";
+import GameProgressBar from "./Components/GamePages/Progress";
+import NavBar from './Components/NavBar';
+import Roadmap from "./Components/Roadmap";
+import UtilityToken from "./Components/Token";
+import Gameplay from "./Components/GamePages/Gameplay";
+import GamePlanets from "./Components/GamePages/GamePlanets";
+import GameCharacters from "./Components/GamePages/GameCharacter";
+import GameLore from "./Components/GamePages/GameLore";
+import Collections from "./Components/Collections";
+import NotFound from "./Components/NotFound";
+import TheTeam from "./Components/TheTeam";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <div className="content-wrap">
+          <div>
+            <NavBar />
+            <div>
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/roadmap" element={<Roadmap />} />
+                <Route path="/collections" element={<Collections />} />
+                <Route path="/lore" element={<GameLore />} />
+                <Route path="/characters" element={<GameCharacters />} />
+                <Route path="/planets" element={<GamePlanets />} />
+                <Route path="/gameplay" element={<Gameplay />} />
+                <Route path="/progress" element={<GameProgressBar />} />
+                <Route path="/staking" element={<GameProgressBar />} />
+                <Route path="/token" element={<UtilityToken />} />
+                <Route path="/team" element={<TheTeam />} />
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            </div>
+          </div>
+        </div>
+      </div>
+    </BrowserRouter>
   );
 }
 
