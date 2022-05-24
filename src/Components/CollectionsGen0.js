@@ -115,6 +115,7 @@ grid-template-rows: 1fr 1fr 1fr;
 grid-gap: 1rem;
 text-decoration: none;
 list-style:none;
+padding: 0;
 
 @media (min-width: 768px) {
   grid-template-columns: 1fr 1fr 1fr;
@@ -154,6 +155,7 @@ const GridWrapper = styled.div`
 
   @media (min-width: 768px) {
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: none;
     grid-gap: 1rem;
   }
 `;

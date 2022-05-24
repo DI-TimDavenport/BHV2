@@ -38,6 +38,7 @@ display: grid;
 grid-template-rows: 1fr 1fr:
 text-decoration: none;
 list-style:none;
+padding: 0;
 
 @media (min-width: 768px) {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
