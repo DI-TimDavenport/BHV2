@@ -3,8 +3,6 @@ import { Routes, Route, Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import CollectionsGen0 from "./CollectionsGen0";
 
-
-
 const Collections = () => {
   const [imgSrc, setImgSrc] = useState();
   const [imgSSSrc, setSSImgSrc] = useState();
@@ -27,12 +25,12 @@ const Collections = () => {
 
   useEffect(() => {
     setImgSrc(BHImages[Math.floor(Math.random() * 5)]);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
     setSSImgSrc(SSImages[Math.floor(Math.random() * 5)]);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <Wrapper className="container">
@@ -51,11 +49,14 @@ const Collections = () => {
         </CollListItem>
         <CollListItem className="ListItem">
           {" "}
-          <Link to="/SolSabers"><Thumbnail
-            className="preview-thumbnail"
-            src={imgSSSrc}
-            alt="BH Preview Thumbnail"
-          /><p>SolSabers</p></Link>
+          <Link to="/SolSabers">
+            <Thumbnail
+              className="preview-thumbnail"
+              src={imgSSSrc}
+              alt="BH Preview Thumbnail"
+            />
+            <p>SolSabers</p>
+          </Link>
         </CollListItem>
       </CollList>
       <Routes>

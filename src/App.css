@@ -24,4 +24,6 @@
   backdrop-filter: blur(10px) opacity(90%);
 }
 
-
+a {
+  text-decoration: none;
+}

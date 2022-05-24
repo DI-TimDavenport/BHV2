@@ -33,7 +33,7 @@ function App() {
                 <Route path="/planets" element={<GamePlanets />} />
                 <Route path="/gameplay" element={<Gameplay />} />
                 <Route path="/progress" element={<GameProgressBar />} />
-                <Route path="/staking" element={<GameProgressBar />} />
+                <Route path="/staking" element={<Home />}  />
                 <Route path="/token" element={<UtilityToken />} />
                 <Route path="/team" element={<TheTeam />} />
                 <Route path="*" element={<NotFound />} />

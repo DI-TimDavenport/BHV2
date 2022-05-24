@@ -86,15 +86,15 @@ const CollectionsGen0 = () => {
       <h1>BucketHeads Gen 0</h1>
 
       <CollList>
-        <CollListItem>
-          <Link to="/collections/Gen0/Standard">Standard Trooper</Link>
-        </CollListItem>
-        <CollListItem>
-          <Link to="/collections/Gen0/HeavyTrooper">HeavyTrooper</Link>
-        </CollListItem>
-        <CollListItem>
-          <Link to="/collections/Gen0/Unique">Unique 1:1</Link>
-        </CollListItem>
+        <Link className="LinkItem" to="/collections/Gen0/Standard">
+          <CollListItem> Standard Trooper</CollListItem>
+        </Link>
+        <Link className="LinkItem" to="/collections/Gen0/HeavyTrooper">
+          <CollListItem>HeavyTrooper</CollListItem>
+        </Link>
+        <Link className="LinkItem" to="/collections/Gen0/Unique">
+          <CollListItem> Unique 1:1</CollListItem>
+        </Link>
       </CollList>
       <main className="main">
         <Routes>
@@ -110,32 +110,31 @@ const CollectionsGen0 = () => {
 export default CollectionsGen0;
 
 const CollList = styled.ul`
-display: grid;
-grid-template-rows: 1fr 1fr 1fr;
-grid-gap: 1rem;
-text-decoration: none;
-list-style:none;
-padding: 0;
-
-@media (min-width: 768px) {
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: none;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 1rem;
-}
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: none;
+    grid-gap: 1rem;
+  }
 `;
 
 const CollListItem = styled.li`
-text-align: center;
-padding: 0.5rem;
-color: white;
-background-color: red;
-border-radius: 5px;
-text-decoration: none;
-list-style:none;
+  text-align: center;
+  list-style: none;
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+  padding: 0.5rem;
 
-:hover {
-background-color:yellow;
-}
+  :hover {
+    background-color: yellow;
+  }
 `;
 
 const Wrapper = styled.div`
