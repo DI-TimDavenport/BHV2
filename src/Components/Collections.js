@@ -1,12 +1,13 @@
 import styled from "styled-components";
-
 import { Routes, Route, Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import CollectionsGen0 from "./CollectionsGen0";
 
+
+
 const Collections = () => {
   const [imgSrc, setImgSrc] = useState();
-  const [SSimgSrc, setSSImgSrc] = useState();
+//   const [imgSSSrc, setSSImgSrc] = useState();
 
   const BHImages = [
     "https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/d4aa389a-0789-42db-0042-8737ddb9bf00/previewimages",
@@ -26,10 +27,12 @@ const Collections = () => {
 
   useEffect(() => {
     setImgSrc(BHImages[Math.floor(Math.random() * 5)]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
     setSSImgSrc(SSImages[Math.floor(Math.random() * 5)]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <Wrapper className="container">
@@ -50,7 +53,7 @@ const Collections = () => {
           {" "}
           <Link to="/SolSabers"><Thumbnail
             className="preview-thumbnail"
-            src={SSimgSrc}
+            src={imgSSSrc}
             alt="BH Preview Thumbnail"
           /><p>SolSabers</p></Link>
         </CollListItem>
