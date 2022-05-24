@@ -9,19 +9,16 @@ const Collections = () => {
       <CollList>
         <CollListItem className="ListItem">
           {" "}
-          <Link to="/Collections/Gen0">BH Gen 0</Link>
+          <Link to="/collections/Gen0/standard">BH Gen 0</Link>
         </CollListItem>
         <CollListItem className="ListItem">
           {" "}
-          <Link to="/Collections/SolSabers">SolSabers</Link>
+          <Link to="/SolSabers">SolSabers</Link>
         </CollListItem>
       </CollList>
-
-      <main className="main">
         <Routes>
           <Route path="/Gen0/*" element={<CollectionsGen0 />} />
         </Routes>
-      </main>
     </Wrapper>
   );
 };

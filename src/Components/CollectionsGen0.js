@@ -87,13 +87,13 @@ const CollectionsGen0 = () => {
 
       <CollList>
         <CollListItem>
-          <Link to="/Collections/Gen0/Standard">Standard Trooper</Link>
+          <Link to="/collections/Gen0/Standard">Standard Trooper</Link>
         </CollListItem>
         <CollListItem>
-          <Link to="/Collections/Gen0/HeavyTrooper">HeavyTrooper</Link>
+          <Link to="/collections/Gen0/HeavyTrooper">HeavyTrooper</Link>
         </CollListItem>
         <CollListItem>
-          <Link to="/Collections/Gen0/Unique">Unique 1:1</Link>
+          <Link to="/collections/Gen0/Unique">Unique 1:1</Link>
         </CollListItem>
       </CollList>
       <main className="main">
