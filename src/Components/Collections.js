@@ -99,13 +99,14 @@ const CollListItem = styled.li`
   padding: 0.5rem;
   margin-bottom: 1rem;
   color: white;
-  background-color: red;
+  background-color: #d1cfcf80;
+  border: solid darkgrey 0.2rem;
   border-radius: 5px;
   text-decoration: none;
   list-style: none;
 
   :hover {
-    background-color: yellow;
+    background-color: #2b282880;
   }
 `;
 

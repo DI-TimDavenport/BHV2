@@ -116,12 +116,13 @@ const CollListItem = styled.li`
   text-align: center;
   list-style: none;
   color: white;
-  background-color: red;
+  background-color: #d1cfcf80;
+  border: solid darkgrey 0.2rem;
   border-radius: 5px;
   padding: 0.5rem;
 
   :hover {
-    background-color: yellow;
+    background-color: #2b282880;
   }
 `;
 
@@ -152,7 +153,8 @@ const ImageContainer = styled.div`
   text-align: center;
   list-style: none;
   color: white;
-  background-color: red;
+  background-color: #d1cfcf80;
+  border: solid darkgrey 0.2rem;
   border-radius: 5px;
   padding: 0.5rem;
 `;
