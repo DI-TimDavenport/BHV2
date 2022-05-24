@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import { Routes, Route, Link } from "react-router-dom";
 import { useState, useEffect } from "react";
-import CollectionsGen0 from "./CollectionsGen0";
+import CollectionsGen0 from "./Collections/CollectionsGen0";
+import CollectionsSS from "./Collections/CollectionsSS";
 
 const Collections = () => {
   const [imgSrc, setImgSrc] = useState();
@@ -44,23 +45,24 @@ const Collections = () => {
               src={imgSrc}
               alt="BH Preview Thumbnail"
             />
-            <p>BH Gen 0</p>
+            <CollectionTitle>BH Gen 0</CollectionTitle>
           </Link>
         </CollListItem>
         <CollListItem className="ListItem">
           {" "}
-          <Link to="/SolSabers">
+          <Link to="/collections/solsabers/nft">
             <Thumbnail
               className="preview-thumbnail"
               src={imgSSSrc}
               alt="BH Preview Thumbnail"
             />
-            <p>SolSabers</p>
+            <CollectionTitle>SolSabers</CollectionTitle>
           </Link>
         </CollListItem>
       </CollList>
       <Routes>
         <Route path="/Gen0/*" element={<CollectionsGen0 />} />
+        <Route path="/SolSabers/*" element={<CollectionsSS />} />
       </Routes>
     </Wrapper>
   );
@@ -71,6 +73,12 @@ export default Collections;
 const Wrapper = styled.div`
   padding: 1rem;
   backdrop-filter: blur(10px) opacity(90%);
+`;
+
+const CollectionTitle = styled.p`
+  color: #fff;
+  font-size: 1.5rem;
+  margin-top: 1rem;
 `;
 
 const CollList = styled.ul`

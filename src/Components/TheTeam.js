@@ -73,7 +73,6 @@ export default TheTeam;
 
 const Wrapper = styled.div`
   padding: 1rem;
-  backdrop-filter: blur(10px) opacity(90%);
 `;
 
 const TeamList = styled.ul`

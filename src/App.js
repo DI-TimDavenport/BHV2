@@ -13,7 +13,8 @@ import GameLore from "./Components/GamePages/GameLore";
 import Collections from "./Components/Collections";
 import NotFound from "./Components/NotFound";
 import TheTeam from "./Components/TheTeam";
-import CollectionsGen0 from "./Components/CollectionsGen0";
+import CollectionsGen0 from "./Components/Collections/CollectionsGen0";
+import CollectionsSS from "./Components/Collections/CollectionsSS";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
                 <Route path="/roadmap" element={<Roadmap />} />
                 <Route path="/collections/*" element={<Collections />} />
                 <Route path="/collections/Gen0/*" element={<CollectionsGen0 />} />
+                <Route path="/collections/SolSabers/*" element={<CollectionsSS />} />
                 <Route path="/lore" element={<GameLore />} />
                 <Route path="/characters" element={<GameCharacters />} />
                 <Route path="/planets" element={<GamePlanets />} />

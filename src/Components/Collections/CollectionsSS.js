@@ -1,18 +1,20 @@
 import styled from "styled-components";
+import { Stream } from "@cloudflare/stream-react";
 import { Routes, Route, Link } from "react-router-dom";
-import StandardTrooperData from "../Data/bhpreviews";
+import SolSaberGameData from "../../Data/ssgamepreviews";
+import SolSaberNFTData from "../../Data/ssnftpreviews";
 
-const StandardTrooper = () => {
+const SSPreview = () => {
   return (
     <Wrapper>
-      <CollDescription>Total in collection: 1653</CollDescription>
+      <CollDescription>SolSaber NFT Previews</CollDescription>
       <GridWrapper>
-        {StandardTrooperData.map(({ id, name, image }) => {
+        {SolSaberNFTData.map(({ id, name, image }) => {
           return (
             <ImageContainer key={id} class="img__wrap">
               <PreviewImages
                 src={image}
-                alt="BH"
+                alt="SolSabers NFT"
                 className="gen0-collection-images"
               ></PreviewImages>
               <TextContainer class="img__description_layer">
@@ -28,17 +30,17 @@ const StandardTrooper = () => {
   );
 };
 
-const HeavyTrooper = () => {
+const SSGamePreview = () => {
   return (
     <Wrapper>
-      <CollDescription>Total in collection: 815</CollDescription>
+      <CollDescription>SolSaber Game Modelling Preview</CollDescription>
       <GridWrapper>
-        {StandardTrooperData.map(({ id, name, image }) => {
+        {SolSaberGameData.map(({ id, name, image }) => {
           return (
             <ImageContainer key={id} class="img__wrap">
               <PreviewImages
                 src={image}
-                alt="BH"
+                alt="SolSabers Game Assets"
                 className="gen0-collection-images"
               ></PreviewImages>
               <TextContainer class="img__description_layer">
@@ -54,60 +56,46 @@ const HeavyTrooper = () => {
   );
 };
 
-const Unique = () => {
+const SSVideoPreview = () => {
+  const videoIdOrSignedUrl = "fe1460b4b3784ef1d6aa9daf92ca5e85";
   return (
     <Wrapper>
-      <CollDescription>Total in collection: 32</CollDescription>
-      <GridWrapper>
-        {StandardTrooperData.map(({ id, name, image }) => {
-          return (
-            <ImageContainer key={id} class="img__wrap">
-              <PreviewImages
-                src={image}
-                alt="BH"
-                className="gen0-collection-images"
-              ></PreviewImages>
-              <TextContainer class="img__description_layer">
-                <ImageDescription class="img__description">
-                  {name}
-                </ImageDescription>
-              </TextContainer>
-            </ImageContainer>
-          );
-        })}
-      </GridWrapper>
+      <CollDescription>3D Modelling</CollDescription>
+      <ImageContainer class="img__wrap">
+        <Stream controls autoplay loop muted src={videoIdOrSignedUrl}></Stream>
+      </ImageContainer>
     </Wrapper>
   );
 };
 
-const CollectionsGen0 = () => {
+const CollectionsSS = () => {
   return (
     <div className="container">
-      <h1>BucketHeads Gen 0</h1>
+      <h1>SolSabers</h1>
 
       <CollList>
-        <Link className="LinkItem" to="/collections/Gen0/Standard">
-          <CollListItem> Standard Trooper</CollListItem>
+        <Link className="LinkItem" to="/collections/solsabers/nft">
+          <CollListItem> SolSabers NFT</CollListItem>
         </Link>
-        <Link className="LinkItem" to="/collections/Gen0/HeavyTrooper">
-          <CollListItem>HeavyTrooper</CollListItem>
+        <Link className="LinkItem" to="/collections/solsabers/game">
+          <CollListItem> SolSabers Game Assets</CollListItem>
         </Link>
-        <Link className="LinkItem" to="/collections/Gen0/Unique">
-          <CollListItem> Unique 1:1</CollListItem>
+        <Link className="LinkItem" to="/collections/solsabers/video">
+          <CollListItem> SolSabers Video Preview</CollListItem>
         </Link>
       </CollList>
       <main className="main">
         <Routes>
-          <Route path="Unique" element={<Unique />} />
-          <Route path="HeavyTrooper" element={<HeavyTrooper />} />
-          <Route path="Standard" element={<StandardTrooper />} />
+          <Route path="nft" element={<SSPreview />} />
+          <Route path="game" element={<SSGamePreview />} />
+          <Route path="video" element={<SSVideoPreview />} />
         </Routes>
       </main>
     </div>
   );
 };
 
-export default CollectionsGen0;
+export default CollectionsSS;
 
 const CollList = styled.ul`
   display: grid;
@@ -154,13 +142,20 @@ const GridWrapper = styled.div`
   position: relative;
 
   @media (min-width: 768px) {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: none;
     grid-gap: 1rem;
   }
 `;
 
-const ImageContainer = styled.div``;
+const ImageContainer = styled.div`
+  text-align: center;
+  list-style: none;
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+  padding: 0.5rem;
+`;
 
 const PreviewImages = styled.img`
   max-width: 100%;
