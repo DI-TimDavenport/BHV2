@@ -7,7 +7,7 @@ import CollectionsGen0 from "./CollectionsGen0";
 
 const Collections = () => {
   const [imgSrc, setImgSrc] = useState();
-//   const [imgSSSrc, setSSImgSrc] = useState();
+  const [imgSSSrc, setSSImgSrc] = useState();
 
   const BHImages = [
     "https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/d4aa389a-0789-42db-0042-8737ddb9bf00/previewimages",
