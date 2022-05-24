@@ -15,7 +15,7 @@
 }
 
 .loreContainer {
-  width: 50rem;
+  max-width: 50rem;
   margin-left: auto;
   margin-right: auto;
   padding: 1rem;
