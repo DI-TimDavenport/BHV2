@@ -11,14 +11,14 @@ const TheTeam = () => {
             src="https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/0f31b3bd-7971-4c85-40b9-824feb5b4200/previewimages"
             alt="BH Preview Thumbnail"
           />
-          <p>Syndicure</p>
+          <TeamName>Syndicure</TeamName>
           <Socials href="https://www.twitter.com/syndicure" target={""}>
             <img
-              src="https://uploads-ssl.webflow.com/61f2155bfe47bd05cae702bb/6215c3cb3fdf7cb3aa69dee2_twitter%20(1).png"
+              src="https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/cef0fd51-25f6-4937-55ae-1328381c7f00/45x90"
               loading="lazy"
               width="30"
               height="30"
-              srcset="https://uploads-ssl.webflow.com/61f2155bfe47bd05cae702bb/6215c3cb3fdf7cb3aa69dee2_twitter%20(1)-p-500.png 500w, https://uploads-ssl.webflow.com/61f2155bfe47bd05cae702bb/6215c3cb3fdf7cb3aa69dee2_twitter%20(1).png 512w"
+              srcset="https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/cef0fd51-25f6-4937-55ae-1328381c7f00/logo"
               sizes="(max-width: 991px) 100vw, 30px"
               alt=""
             />
@@ -31,14 +31,14 @@ const TheTeam = () => {
             src="https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/0f31b3bd-7971-4c85-40b9-824feb5b4200/previewimages"
             alt="BH Preview Thumbnail"
           />
-          <p>CineNERD</p>
+          <TeamName>CineNERD</TeamName>
           <Socials href="https://www.twitter.com/turock_93" target={""}>
           <img
               src="https://uploads-ssl.webflow.com/61f2155bfe47bd05cae702bb/6215c3cb3fdf7cb3aa69dee2_twitter%20(1).png"
               loading="lazy"
               width="30"
               height="30"
-              srcset="https://uploads-ssl.webflow.com/61f2155bfe47bd05cae702bb/6215c3cb3fdf7cb3aa69dee2_twitter%20(1)-p-500.png 500w, https://uploads-ssl.webflow.com/61f2155bfe47bd05cae702bb/6215c3cb3fdf7cb3aa69dee2_twitter%20(1).png 512w"
+              srcset="https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/cef0fd51-25f6-4937-55ae-1328381c7f00/logo"
               sizes="(max-width: 991px) 100vw, 30px"
               alt=""
             />
@@ -51,14 +51,14 @@ const TheTeam = () => {
             src="https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/0f31b3bd-7971-4c85-40b9-824feb5b4200/previewimages"
             alt="BH Preview Thumbnail"
           />
-          <p>MeltedRope</p>
+          <TeamName>MeltedRope</TeamName>
           <Socials href="https://www.twitter.com/meltedrope" target={""}>
           <img
               src="https://uploads-ssl.webflow.com/61f2155bfe47bd05cae702bb/6215c3cb3fdf7cb3aa69dee2_twitter%20(1).png"
               loading="lazy"
               width="30"
               height="30"
-              srcset="https://uploads-ssl.webflow.com/61f2155bfe47bd05cae702bb/6215c3cb3fdf7cb3aa69dee2_twitter%20(1)-p-500.png 500w, https://uploads-ssl.webflow.com/61f2155bfe47bd05cae702bb/6215c3cb3fdf7cb3aa69dee2_twitter%20(1).png 512w"
+              srcset="https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/cef0fd51-25f6-4937-55ae-1328381c7f00/logo"
               sizes="(max-width: 991px) 100vw, 30px"
               alt=""
             />
@@ -96,6 +96,7 @@ const TeamMember = styled.li`
   background-color: #d1cfcf80;
   border: solid darkgrey 0.2rem;
   border-radius: 5px;
+  box-shadow: 3px 3px 10px #000;
   text-decoration: none;
   list-style: none;
 
@@ -106,6 +107,16 @@ const TeamMember = styled.li`
 
 const Thumbnail = styled.img`
   max-width: 100%;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px #000;
+
 `;
 
-const Socials = styled.a``;
+const TeamName = styled.p`
+  color: #fff;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+`;
+
+const Socials = styled.a`
+color:white;`;

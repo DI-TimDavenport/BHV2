@@ -131,6 +131,7 @@ const CollListItem = styled.li`
   background-color: #d1cfcf80;
   border: solid darkgrey 0.2rem;
   border-radius: 5px;
+  box-shadow: 3px 3px 10px #000;
   padding: 0.5rem;
 
   :hover {
@@ -173,6 +174,8 @@ text-align: center;
 
 const PreviewImages = styled.img`
   max-width: 100%;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px #000;
 `;
 
 const TextContainer = styled.div``;
