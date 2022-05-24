@@ -119,6 +119,7 @@ padding: 0;
 
 @media (min-width: 768px) {
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: none;
   grid-gap: 1rem;
 }
 `;
