@@ -1,7 +1,7 @@
 const GamePlanets = () => {
     return (
         <>
-        <h1>GamePlanets</h1>
+ 
         </>
     );
   }

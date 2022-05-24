@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Components/Home";
 import GameProgressBar from "./Components/GamePages/Progress";
 import NavBar from './Components/NavBar';
@@ -25,7 +25,7 @@ function App() {
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/roadmap" element={<Roadmap />} />
-                <Route path="/collections" element={<Collections />} />
+                <Route path="/collections/*" element={<Collections />} />
                 <Route path="/lore" element={<GameLore />} />
                 <Route path="/characters" element={<GameCharacters />} />
                 <Route path="/planets" element={<GamePlanets />} />
