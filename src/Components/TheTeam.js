@@ -4,8 +4,9 @@ const TheTeam = () => {
   return (
     <Wrapper className="container">
       <h1>BucketHead Studios Team</h1>
+
       <TeamList>
-        <TeamMember className="TeamMember">
+        <TeamMember className="TeamMember Syndicure">
           <Thumbnail
             className="preview-thumbnail"
             src="https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/0f31b3bd-7971-4c85-40b9-824feb5b4200/previewimages"
@@ -24,7 +25,11 @@ const TheTeam = () => {
             />
           </Socials>
         </TeamMember>
-        <TeamMember className="TeamMember">
+        <TeamDetails className="syndicure-bio">
+          Founder of Syndic Industries <br /> Co-Founder and developer of
+          BucketHead Studios
+        </TeamDetails>
+        <TeamMember className="TeamMember CineNERD">
           {" "}
           <Thumbnail
             className="preview-thumbnail"
@@ -33,7 +38,7 @@ const TheTeam = () => {
           />
           <TeamName>CineNERD</TeamName>
           <Socials href="https://www.twitter.com/turock_93" target={""}>
-          <img
+            <img
               src="https://uploads-ssl.webflow.com/61f2155bfe47bd05cae702bb/6215c3cb3fdf7cb3aa69dee2_twitter%20(1).png"
               loading="lazy"
               width="30"
@@ -44,7 +49,10 @@ const TheTeam = () => {
             />
           </Socials>
         </TeamMember>
-        <TeamMember className="TeamMember">
+        <TeamDetails className="cinenerd-bio">
+          Co-Founder and artist of BucketHead Studios
+        </TeamDetails>
+        <TeamMember className="TeamMember MeltedRope">
           {" "}
           <Thumbnail
             className="preview-thumbnail"
@@ -53,7 +61,7 @@ const TheTeam = () => {
           />
           <TeamName>MeltedRope</TeamName>
           <Socials href="https://www.twitter.com/meltedrope" target={""}>
-          <img
+            <img
               src="https://uploads-ssl.webflow.com/61f2155bfe47bd05cae702bb/6215c3cb3fdf7cb3aa69dee2_twitter%20(1).png"
               loading="lazy"
               width="30"
@@ -64,6 +72,9 @@ const TheTeam = () => {
             />
           </Socials>
         </TeamMember>
+        <TeamDetails className="meltedrope-bio">
+          Co-Founder and COO of BucketHead Studios
+        </TeamDetails>
       </TeamList>
     </Wrapper>
   );
@@ -105,11 +116,22 @@ const TeamMember = styled.li`
   }
 `;
 
+const TeamDetails = styled.p`
+  display: none;
+  grid-column: 1/4;
+  grid-row: 2;
+  color: white;
+  background-color: #2b282880;
+  border: solid darkgrey 0.2rem;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px #000;
+  padding: 1rem;
+`;
+
 const Thumbnail = styled.img`
   max-width: 100%;
   border-radius: 5px;
   box-shadow: 3px 3px 10px #000;
-
 `;
 
 const TeamName = styled.p`
@@ -119,4 +141,5 @@ const TeamName = styled.p`
 `;
 
 const Socials = styled.a`
-color:white;`;
+  color: white;
+`;

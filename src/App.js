@@ -32,7 +32,7 @@ function App() {
                 <Route path="/collections/SolSabers/*" element={<CollectionsSS />} />
                 <Route path="/lore" element={<GameLore />} />
                 <Route path="/characters" element={<GameCharacters />} />
-                <Route path="/planets" element={<GamePlanets />} />
+                <Route path="/planets/*" element={<GamePlanets />} />
                 <Route path="/gameplay" element={<Gameplay />} />
                 <Route path="/progress" element={<GameProgressBar />} />
                 <Route path="/staking" element={<Home />}  />

@@ -9,10 +9,10 @@ const Roadmap = () => {
     <VerticalTimeline>
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
-        contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-        contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-        date="Q1"
-        iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+        contentStyle={{ background: "#d1cfcf80", color: "#fff" }}
+        contentArrowStyle={{ borderRight: "7px solid  #d1cfcf80" }}
+        date=" Q1"
+        iconStyle={{ background: "#d1cfcf80", color: "#d1cfcf" }}
       >
         <h3 className="vertical-timeline-element-title">Launch BucketHeads</h3>
         <h4 className="vertical-timeline-element-subtitle">1</h4>
@@ -25,7 +25,7 @@ const Roadmap = () => {
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
         date="2010 - 2011"
-        iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+        iconStyle={{ background: "#d1cfcf80", color: "#d1cfcf80" }}
       >
         <h3 className="vertical-timeline-element-title">1</h3>
         <h4 className="vertical-timeline-element-subtitle">

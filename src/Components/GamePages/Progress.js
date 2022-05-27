@@ -38,8 +38,8 @@ export default GameProgressBar;
 
 const Wrapper = styled.div`
   background: lightgrey;
-  border-radius: 3px;
-  border: 2px solid grey;
+  border-radius: 5px;
+  border: 3px solid grey;
   color: #000;
   margin: 1em 0em 0em 0em;
   padding: 0em 1em 1em 1em;
@@ -49,6 +49,6 @@ const Wrapper = styled.div`
   }
 
   .progress-bar-text {
-      margin: 1em 0 0 0;
+      margin: 1rem 0 0 0;
   }
 `
