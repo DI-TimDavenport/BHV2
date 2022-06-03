@@ -71,7 +71,7 @@ const SSVideoPreview = () => {
 const CollectionsSS = () => {
   return (
     <div className="container">
-      <h1>SolSabers</h1>
+      <SolSaberTitle>SolSabers</SolSaberTitle>
 
       <CollList>
         <Link className="LinkItem" to="/collections/solsabers/nft">
@@ -130,6 +130,12 @@ const CollListItem = styled.li`
 const Wrapper = styled.div`
   padding: 1rem;
   backdrop-filter: blur(10px) opacity(90%);
+`;
+
+const SolSaberTitle = styled.h1`
+margin-top:0rem;
+  text-align:center;
+  font-size:4.5rem;
 `;
 
 const CollDescription = styled.p`

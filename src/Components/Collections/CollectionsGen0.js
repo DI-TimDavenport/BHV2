@@ -83,8 +83,7 @@ const Unique = () => {
 const CollectionsGen0 = () => {
   return (
     <div className="container">
-      <h1>BucketHeads Gen 0</h1>
-
+      <BHTitle>BucketHeads Gen 0</BHTitle>
       <CollList>
         <Link className="LinkItem" to="/collections/Gen0/Standard">
           <CollListItem> Standard Trooper</CollListItem>
@@ -142,6 +141,12 @@ const CollListItem = styled.li`
 const Wrapper = styled.div`
   padding: 1rem;
   backdrop-filter: blur(10px) opacity(90%);
+`;
+
+const BHTitle = styled.h1`
+margin-top:0rem;
+  text-align:center;
+  font-size:4.5rem;
 `;
 
 const CollDescription = styled.p`
