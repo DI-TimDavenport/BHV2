@@ -1,9 +1,12 @@
+import styled from "styled-components";
+
 const Home = () => {
     return (
-        <>
-        <h1>Welcome to BucketHeads</h1>
-        </>
+        <div className="Homepage">
+     
+        </div>
     );
   }
   
   export default Home
+

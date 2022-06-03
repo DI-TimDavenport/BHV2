@@ -73,7 +73,6 @@ export default GamePlanets;
 
 const Wrapper = styled.div`
   padding: 0 1rem 1rem 1rem;
-  backdrop-filter: blur(10px) opacity(90%);
 `;
 
 const CollList = styled.ul`
@@ -136,8 +135,7 @@ const ImageContainer = styled.div`
   padding: 0.5rem;
 
   :hover {
-    transform: scale(2);
-    backdrop-filter: blur(10px) opacity(90%);
+    transform: scale(1.5);
   }
 `;
 

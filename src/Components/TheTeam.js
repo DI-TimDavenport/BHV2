@@ -3,8 +3,7 @@ import styled from "styled-components";
 const TheTeam = () => {
   return (
     <Wrapper className="container">
-      <h1>BucketHead Studios Team</h1>
-
+      <TeamTitle>BucketHead Studios Team</TeamTitle>
       <TeamList>
         <TeamMember className="TeamMember Syndicure">
           <Thumbnail
@@ -84,6 +83,15 @@ export default TheTeam;
 
 const Wrapper = styled.div`
   padding: 1rem;
+  background-color: rgb(33,37,41,0.5);
+  backdrop-filter: blur(10px) opacity(90%);
+
+`;
+
+const TeamTitle = styled.h1`
+margin-top:3rem;
+  text-align:center;
+  font-size:4.5rem;
 `;
 
 const TeamList = styled.ul`
@@ -92,10 +100,12 @@ grid-template-columns: 1fr:
 text-decoration: none;
 list-style:none;
 padding: 0;
+margin-top: 0rem;
 
 @media (min-width: 768px) {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1rem;
+    margin-top: 5rem;
 }
 `;
 

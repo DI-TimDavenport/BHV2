@@ -1,9 +1,20 @@
 import styled from "styled-components";
+import { Stream } from "@cloudflare/stream-react";
 
 const GameLore = () => {
+  const videoIdOrSignedUrl = "3cbc5b7668ac41c6afff5f3d2220b3af";
   return (
     <Wrapper className="container">
-      <h1>GameLore</h1>
+       <LoreTitle>Lore</LoreTitle>
+      <TokenContainer>
+        <VideoContainer class="img__wrap">
+          <Stream
+            controls
+            src={videoIdOrSignedUrl}
+          ></Stream>
+        </VideoContainer>
+        </TokenContainer>
+   
       <p>
         “How old is your home planet? <br />
         <br /> For how long has your species ruled over it, when did it prove to
@@ -51,4 +62,36 @@ export default GameLore;
 
 const Wrapper = styled.div`
   padding: 1rem;
+  background-color: rgb(33, 37, 41, 0.5);
+  backdrop-filter: blur(10px) opacity(90%);
+`;
+
+const LoreTitle = styled.h1`
+margin-top:0rem;
+  text-align:center;
+  font-size:4.5rem;
+`;
+
+const VideoContainer = styled.div`
+  text-align: center;
+  list-style: none;
+  padding: 0.5rem;
+`;
+
+const TokenContainer = styled.div`
+  text-align: center;
+  max-width: 43rem;
+  padding: 0.5rem;
+  margin: 0 auto 2rem auto;
+  color: white;
+  background-color: #d1cfcf80;
+  border: solid darkgrey 0.2rem;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px #000;
+  text-decoration: none;
+  list-style: none;
+
+  :hover {
+    background-color: #2b282880;
+  }
 `;

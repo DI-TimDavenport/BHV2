@@ -4,12 +4,26 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/bc3ae2d4-384a-46aa-3f83-f482633a6f00/backgrounddesktop');
+  background-image: url("./Background.png");
+  /* background-image: url('https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/bc3ae2d4-384a-46aa-3f83-f482633a6f00/backgrounddesktop'); */
   color: white !important; 
-  color: #d1cfcf80 !important; 
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "nidas";
+  src: local("nidas"),
+   url("./Fonts/nidas.woff") format("truetype");
+  font-weight: bolder;
+  }
+
+@font-face {
+    font-family: "Lombok";
+    src: local("Lombok"),
+     url("./Fonts/Lombok.otf") format("truetype");
+    font-weight: bolder;
+    }
