@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Components/Home";
 import GameProgressBar from "./Components/GamePages/Progress";
 import NavBar from './Components/NavBar';
+import SiteFooter from './Components/Footer';
 import Roadmap from "./Components/Roadmap";
 import UtilityToken from "./Components/Token";
 import Gameplay from "./Components/GamePages/Gameplay";
@@ -19,9 +20,9 @@ import CollectionsSS from "./Components/Collections/CollectionsSS";
 function App() {
   return (
     <BrowserRouter>
-      <div className="App">
+      <div className="AppContainer">
         <div className="content-wrap">
-          <div>
+          <div className="App">
             <NavBar />
             <div className="component-bg">
               <Routes>
@@ -41,6 +42,7 @@ function App() {
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </div>
+            <SiteFooter />
           </div>
         </div>
       </div>

@@ -72,7 +72,6 @@ export default Collections;
 
 const Wrapper = styled.div`
   padding: 1rem;
-  min-height: 93.55vh;
 `;
 
 const CollectionTitle = styled.h1`

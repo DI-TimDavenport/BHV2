@@ -83,11 +83,11 @@ export default TheTeam;
 
 const Wrapper = styled.div`
   padding: 1rem;
-  min-height: 93.55vh;
+  min-height:100vh;
 `;
 
 const TeamTitle = styled.h1`
-margin-top:3rem;
+margin-top:0rem;
   text-align:center;
   font-size:4.5rem;
 `;
@@ -103,7 +103,7 @@ margin-top: 0rem;
 @media (min-width: 768px) {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1rem;
-    margin-top: 5rem;
+    margin-top: 4rem;
 }
 `;
 
