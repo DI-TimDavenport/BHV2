@@ -83,9 +83,7 @@ export default TheTeam;
 
 const Wrapper = styled.div`
   padding: 1rem;
-  background-color: rgb(33,37,41,0.5);
-  backdrop-filter: blur(10px) opacity(90%);
-
+  min-height: 93.55vh;
 `;
 
 const TeamTitle = styled.h1`

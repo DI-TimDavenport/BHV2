@@ -4,17 +4,10 @@
   max-width: 60rem;
   margin-left: auto;
   margin-right: auto;
-  background-color: rgb(33,37,41,0.5);
-  backdrop-filter: blur(10px) opacity(90%);
+
   min-height: 100vh;
   font-family: "nidas";
   text-transform: uppercase;
-}
-
-.Homepage + .App {
-  backdrop-filter: none !important;
-  background-color: none !important;
-  min-height: 100vh;
 }
 
 a {
@@ -29,15 +22,31 @@ h1 {
   margin-bottom: 2rem;
 }
 
+.component-bg {
+  background-color: rgb(33,37,41,0.8);
+  backdrop-filter: blur(10px) opacity(90%);
+}
+
+.progress-text{
+ margin-top: 1rem;
+}
+
 /* Full Project CSS end */
 /* Navbar CSS Start */
 
 .navbar,
 .bg-dark {
   max-width: 100% !important;
-  --bs-bg-opacity: 0.5;
+  --bs-bg-opacity: 0.9;
 }
 
+.nav-link{
+color: rgba(255,255,255,.85) !important;
+}
+
+.nav-link:hover{
+  color: rgba(255,255,255,1) !important;
+  }
 .social-links {
   flex-direction: row !important;
 }
@@ -79,3 +88,8 @@ h1 {
   }
 }
 /* Team Member CSS end */
+/* Game Planets CSS Start */
+
+.main {
+  min-height: 100vh;
+}

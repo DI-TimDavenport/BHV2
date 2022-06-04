@@ -60,6 +60,7 @@ export default GameProgressBar;
 
 const Wrapper = styled.div`
   padding:1rem;
+  min-height: 100vh;
 `;
 
 const ProgressTitle = styled.h1`

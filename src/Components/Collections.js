@@ -35,7 +35,7 @@ const Collections = () => {
   }, []);
   return (
     <Wrapper className="container">
-      <h1>BucketHead Studios Collections</h1>
+      <CollectionTitle>BucketHead Studios Collections</CollectionTitle>
       <CollList>
         <CollListItem className="ListItem">
           {" "}
@@ -45,7 +45,7 @@ const Collections = () => {
               src={imgSrc}
               alt="BH Preview Thumbnail"
             />
-            <CollectionTitle>BH Gen 0</CollectionTitle>
+            <CollectionName>BH Gen 0</CollectionName>
           </Link>
         </CollListItem>
         <CollListItem className="ListItem">
@@ -56,7 +56,7 @@ const Collections = () => {
               src={imgSSSrc}
               alt="BH Preview Thumbnail"
             />
-            <CollectionTitle>SolSabers</CollectionTitle>
+            <CollectionName>SolSabers</CollectionName>
           </Link>
         </CollListItem>
       </CollList>
@@ -72,10 +72,15 @@ export default Collections;
 
 const Wrapper = styled.div`
   padding: 1rem;
-  backdrop-filter: blur(10px) opacity(90%);
+  min-height: 93.55vh;
 `;
 
-const CollectionTitle = styled.p`
+const CollectionTitle = styled.h1`
+text-align:center;
+font-size:4.5rem;
+`;
+
+const CollectionName = styled.p`
   color: #fff;
   font-size: 1.5rem;
   margin-top: 1rem;

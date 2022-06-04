@@ -7,6 +7,7 @@ body {
   background-image: url("./Background.png");
   /* background-image: url('https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/bc3ae2d4-384a-46aa-3f83-f482633a6f00/backgrounddesktop'); */
   color: white !important; 
+  max-height: 100vh;
 }
 
 code {

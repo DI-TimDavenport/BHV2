@@ -23,7 +23,7 @@ function App() {
         <div className="content-wrap">
           <div>
             <NavBar />
-            <div>
+            <div className="component-bg">
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/roadmap" element={<Roadmap />} />

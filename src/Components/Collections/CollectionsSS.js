@@ -129,7 +129,6 @@ const CollListItem = styled.li`
 
 const Wrapper = styled.div`
   padding: 1rem;
-  backdrop-filter: blur(10px) opacity(90%);
 `;
 
 const SolSaberTitle = styled.h1`

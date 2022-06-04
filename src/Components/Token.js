@@ -36,8 +36,6 @@ export default UtilityToken;
 
 const Wrapper = styled.div`
   padding: 1rem;
-  background-color: rgb(33, 37, 41, 0.5);
-  backdrop-filter: blur(10px) opacity(90%);
 `;
 
 const TokenTitle = styled.h1`
