@@ -5,9 +5,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url("./Background.png");
-  background-size:auto;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
   /* background-image: url('https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/bc3ae2d4-384a-46aa-3f83-f482633a6f00/backgrounddesktop'); */
   color: white !important; 
   max-height: 100vh;
