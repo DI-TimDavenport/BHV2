@@ -1,6 +1,9 @@
 import styled from "styled-components";
 import { Routes, Route, Link } from "react-router-dom";
-import StandardTrooperData from "../../Data/bhpreviews";
+import StandardTrooperData from "../../Data/standardbhpreviews";
+import HeavyTrooperData from "../../Data/heavybhpreviews";
+import UniqueTrooperData from "../../Data/uniquebhpreviews";
+import SiteFooter from "../Footer";
 
 const StandardTrooper = () => {
   return (
@@ -16,9 +19,9 @@ const StandardTrooper = () => {
                 className="gen0-collection-images"
               ></PreviewImages>
               <TextContainer class="img__description_layer">
-                <ImageDescription class="img__description">
+                {/* <ImageDescription class="img__description">
                   {name}
-                </ImageDescription>
+                </ImageDescription> */}
               </TextContainer>
             </ImageContainer>
           );
@@ -33,7 +36,7 @@ const HeavyTrooper = () => {
     <Wrapper>
       <CollDescription>Total in collection: 815</CollDescription>
       <GridWrapper>
-        {StandardTrooperData.map(({ id, name, image }) => {
+        {HeavyTrooperData.map(({ id, name, image }) => {
           return (
             <ImageContainer key={id} class="img__wrap">
               <PreviewImages
@@ -42,9 +45,9 @@ const HeavyTrooper = () => {
                 className="gen0-collection-images"
               ></PreviewImages>
               <TextContainer class="img__description_layer">
-                <ImageDescription class="img__description">
+                {/* <ImageDescription class="img__description">
                   {name}
-                </ImageDescription>
+                </ImageDescription> */}
               </TextContainer>
             </ImageContainer>
           );
@@ -59,7 +62,7 @@ const Unique = () => {
     <Wrapper>
       <CollDescription>Total in collection: 32</CollDescription>
       <GridWrapper>
-        {StandardTrooperData.map(({ id, name, image }) => {
+        {UniqueTrooperData.map(({ id, name, image }) => {
           return (
             <ImageContainer key={id} class="img__wrap">
               <PreviewImages
@@ -68,9 +71,9 @@ const Unique = () => {
                 className="gen0-collection-images"
               ></PreviewImages>
               <TextContainer class="img__description_layer">
-                <ImageDescription class="img__description">
+                {/* <ImageDescription class="img__description">
                   {name}
-                </ImageDescription>
+                </ImageDescription> */}
               </TextContainer>
             </ImageContainer>
           );
@@ -82,27 +85,30 @@ const Unique = () => {
 
 const CollectionsGen0 = () => {
   return (
-    <div className="container">
-      <BHTitle>BucketHeads Gen 0</BHTitle>
-      <CollList>
-        <Link className="LinkItem" to="/collections/Gen0/Standard">
-          <CollListItem> Standard Trooper</CollListItem>
-        </Link>
-        <Link className="LinkItem" to="/collections/Gen0/HeavyTrooper">
-          <CollListItem>HeavyTrooper</CollListItem>
-        </Link>
-        <Link className="LinkItem" to="/collections/Gen0/Unique">
-          <CollListItem> Unique 1:1</CollListItem>
-        </Link>
-      </CollList>
-      <main className="main">
-        <Routes>
-          <Route path="Unique" element={<Unique />} />
-          <Route path="HeavyTrooper" element={<HeavyTrooper />} />
-          <Route path="Standard" element={<StandardTrooper />} />
-        </Routes>
-      </main>
-    </div>
+    <>
+      <div className="container">
+        <BHTitle>BucketHeads Gen 0</BHTitle>
+        <CollList>
+          <Link className="LinkItem" to="/collections/Gen0/Standard">
+            <CollListItem> Standard Trooper</CollListItem>
+          </Link>
+          <Link className="LinkItem" to="/collections/Gen0/HeavyTrooper">
+            <CollListItem>HeavyTrooper</CollListItem>
+          </Link>
+          <Link className="LinkItem" to="/collections/Gen0/Unique">
+            <CollListItem> Unique 1:1</CollListItem>
+          </Link>
+        </CollList>
+        <main className="main">
+          <Routes>
+            <Route path="Unique" element={<Unique />} />
+            <Route path="HeavyTrooper" element={<HeavyTrooper />} />
+            <Route path="Standard" element={<StandardTrooper />} />
+          </Routes>
+        </main>
+      </div>
+      <SiteFooter />
+    </>
   );
 };
 
@@ -140,6 +146,7 @@ const CollListItem = styled.li`
 
 const Wrapper = styled.div`
   padding: 1rem;
+  min-height: 90vh;
 `;
 
 const BHTitle = styled.h1`
@@ -184,7 +191,7 @@ const PreviewImages = styled.img`
 
 const TextContainer = styled.div``;
 
-const ImageDescription = styled.p`
-  transform: translateY(1em);
-  text-align: center;
-`;
+// const ImageDescription = styled.p`
+//   transform: translateY(1em);
+//   text-align: center;
+// `;

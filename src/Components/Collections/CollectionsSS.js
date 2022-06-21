@@ -3,6 +3,7 @@ import { Stream } from "@cloudflare/stream-react";
 import { Routes, Route, Link } from "react-router-dom";
 import SolSaberGameData from "../../Data/ssgamepreviews";
 import SolSaberNFTData from "../../Data/ssnftpreviews";
+import SiteFooter from "../Footer";
 
 const SSPreview = () => {
   return (
@@ -18,9 +19,9 @@ const SSPreview = () => {
                 className="gen0-collection-images"
               ></PreviewImages>
               <TextContainer class="img__description_layer">
-                <ImageDescription class="img__description">
+                {/* <ImageDescription class="img__description">
                   {name}
-                </ImageDescription>
+                </ImageDescription> */}
               </TextContainer>
             </ImageContainer>
           );
@@ -44,9 +45,9 @@ const SSGamePreview = () => {
                 className="gen0-collection-images"
               ></PreviewImages>
               <TextContainer class="img__description_layer">
-                <ImageDescription class="img__description">
+                {/* <ImageDescription class="img__description">
                   {name}
-                </ImageDescription>
+                </ImageDescription> */}
               </TextContainer>
             </ImageContainer>
           );
@@ -70,28 +71,30 @@ const SSVideoPreview = () => {
 
 const CollectionsSS = () => {
   return (
-    <div className="container">
-      <SolSaberTitle>SolSabers</SolSaberTitle>
-
-      <CollList>
-        <Link className="LinkItem" to="/collections/solsabers/nft">
-          <CollListItem> SolSabers NFT</CollListItem>
-        </Link>
-        <Link className="LinkItem" to="/collections/solsabers/game">
-          <CollListItem> SolSabers Game Assets</CollListItem>
-        </Link>
-        <Link className="LinkItem" to="/collections/solsabers/video">
-          <CollListItem> SolSabers Video Preview</CollListItem>
-        </Link>
-      </CollList>
-      <main className="main">
-        <Routes>
-          <Route path="nft" element={<SSPreview />} />
-          <Route path="game" element={<SSGamePreview />} />
-          <Route path="video" element={<SSVideoPreview />} />
-        </Routes>
-      </main>
-    </div>
+    <>
+      <div className="container">
+        <SolSaberTitle>SolSabers</SolSaberTitle>
+        <CollList>
+          <Link className="LinkItem" to="/collections/solsabers/nft">
+            <CollListItem> SolSabers NFT</CollListItem>
+          </Link>
+          <Link className="LinkItem" to="/collections/solsabers/game">
+            <CollListItem> SolSabers Game Assets</CollListItem>
+          </Link>
+          <Link className="LinkItem" to="/collections/solsabers/video">
+            <CollListItem> SolSabers Video Preview</CollListItem>
+          </Link>
+        </CollList>
+        <main className="main">
+          <Routes>
+            <Route path="nft" element={<SSPreview />} />
+            <Route path="game" element={<SSGamePreview />} />
+            <Route path="video" element={<SSVideoPreview />} />
+          </Routes>
+        </main>
+      </div>
+      <SiteFooter />
+    </>
   );
 };
 
@@ -129,6 +132,7 @@ const CollListItem = styled.li`
 
 const Wrapper = styled.div`
   padding: 1rem;
+  min-height: 90vh;
 `;
 
 const SolSaberTitle = styled.h1`
@@ -173,7 +177,7 @@ const PreviewImages = styled.img`
 
 const TextContainer = styled.div``;
 
-const ImageDescription = styled.p`
-  transform: translateY(1em);
-  text-align: center;
-`;
+// const ImageDescription = styled.p`
+//   transform: translateY(1em);
+//   text-align: center;
+// `;

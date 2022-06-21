@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Routes, Route, Link } from "react-router-dom";
 import ErtugralData from "../../Data/gamepreviews";
+import SiteFooter from "../Footer";
 
 const Ertugral = () => {
   return (
@@ -16,9 +17,9 @@ const Ertugral = () => {
                 className="gen0-collection-images"
               ></PreviewImages>
               <TextContainer class="img__description_layer">
-                <ImageDescription class="img__description">
+                {/* <ImageDescription class="img__description">
                   {name}
-                </ImageDescription>
+                </ImageDescription> */}
               </TextContainer>
             </ImageContainer>
           );
@@ -30,42 +31,46 @@ const Ertugral = () => {
 
 const GamePlanets = () => {
   return (
-    <div className="container">
-      <CollList>
-        <Link className="LinkItem" to="/planets/Ertugral">
-          <CollListItem>Ertugral</CollListItem>
-        </Link>
-        <Link className="LinkItem" to="/planets">
-          <CollListItem>Coming Soon</CollListItem>
-        </Link>
-        <Link className="LinkItem" to="/planets">
-          <CollListItem>Coming Soon</CollListItem>
-        </Link>
-        <Link className="LinkItem" to="/planets">
-          <CollListItem>Coming Soon</CollListItem>
-        </Link>
-        <Link className="LinkItem" to="/planets">
-          <CollListItem>Coming Soon</CollListItem>
-        </Link>
-        <Link className="LinkItem" to="/planets">
-          <CollListItem>Coming Soon</CollListItem>
-        </Link>
-        <Link className="LinkItem" to="/planets">
-          <CollListItem>Coming Soon</CollListItem>
-        </Link>
-        <Link className="LinkItem" to="/planets">
-          <CollListItem>Coming Soon</CollListItem>
-        </Link>
-        <Link className="LinkItem" to="/planets">
-          <CollListItem>Coming Soon</CollListItem>
-        </Link>
-      </CollList>
-      <main className="main">
-        <Routes>
-          <Route path="Ertugral" element={<Ertugral />} />
-        </Routes>
-      </main>
-    </div>
+    <>
+      <div className="container">
+        <CollList>
+          <Link className="LinkItem" to="/planets/Ertugral">
+            <CollListItem>Ertugral</CollListItem>
+          </Link>
+          <Link className="LinkItem" to="/planets">
+            <CollListItem>Coming Soon</CollListItem>
+          </Link>
+          <Link className="LinkItem" to="/planets">
+            <CollListItem>Coming Soon</CollListItem>
+          </Link>
+          <Link className="LinkItem" to="/planets">
+            <CollListItem>Coming Soon</CollListItem>
+          </Link>
+          <Link className="LinkItem" to="/planets">
+            <CollListItem>Coming Soon</CollListItem>
+          </Link>
+          <Link className="LinkItem" to="/planets">
+            <CollListItem>Coming Soon</CollListItem>
+          </Link>
+          <Link className="LinkItem" to="/planets">
+            <CollListItem>Coming Soon</CollListItem>
+          </Link>
+          <Link className="LinkItem" to="/planets">
+            <CollListItem>Coming Soon</CollListItem>
+          </Link>
+          <Link className="LinkItem" to="/planets">
+            <CollListItem>Coming Soon</CollListItem>
+          </Link>
+        </CollList>
+        <main className="main">
+          <Routes>
+            <Route path="Ertugral" element={<Ertugral />} />
+          </Routes>
+        </main>
+      </div>
+      <SiteFooter />
+    </>
+
   );
 };
 
@@ -147,7 +152,7 @@ const PreviewImages = styled.img`
 
 const TextContainer = styled.div``;
 
-const ImageDescription = styled.p`
-  transform: translateY(1em);
-  text-align: center;
-`;
+// const ImageDescription = styled.p`
+//   transform: translateY(1em);
+//   text-align: center;
+// `;

@@ -3,6 +3,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import CollectionsGen0 from "./Collections/CollectionsGen0";
 import CollectionsSS from "./Collections/CollectionsSS";
+import SiteFooter from "./Footer";
 
 const Collections = () => {
   const [imgSrc, setImgSrc] = useState();
@@ -17,11 +18,11 @@ const Collections = () => {
   ];
 
   const SSImages = [
-    "https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/d4aa389a-0789-42db-0042-8737ddb9bf00/previewimages",
-    "https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/ff3ed493-7596-4a65-2d17-b42f2a924e00/previewimages",
-    "https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/62d25cff-a13f-42bd-d75f-4a1a27b98800/previewimages",
-    "https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/f7ec25b9-73fd-4106-c550-26cc1bc6ab00/previewimages",
-    "https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/0f31b3bd-7971-4c85-40b9-824feb5b4200/previewimages",
+    "https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/0adc7226-98a1-4639-5dce-317c7b9f7500/previewimages",
+    "https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/21fd306d-d251-4ff6-3388-d03494f95500/previewimages",
+    "https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/21fd306d-d251-4ff6-3388-d03494f95500/previewimages",
+    "https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/c7dd821f-de5c-44b8-9fac-a9dcd1f7f000/previewimages",
+    "https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/4ea3164f-e6e4-417a-2eff-2c7fbfe70500/previewimages",
   ];
 
   useEffect(() => {
@@ -34,6 +35,7 @@ const Collections = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
+    <>
     <Wrapper className="container">
       <CollectionTitle>BucketHead Studios Collections</CollectionTitle>
       <CollList>
@@ -65,6 +67,8 @@ const Collections = () => {
         <Route path="/SolSabers/*" element={<CollectionsSS />} />
       </Routes>
     </Wrapper>
+    <SiteFooter />
+    </>
   );
 };
 
@@ -72,6 +76,7 @@ export default Collections;
 
 const Wrapper = styled.div`
   padding: 1rem;
+  min-height: 90vh;
 `;
 
 const CollectionTitle = styled.h1`
@@ -87,7 +92,7 @@ const CollectionName = styled.p`
 
 const CollList = styled.ul`
 display: grid;
-grid-template-columns: 1fr:
+grid-template-columns: 1fr;
 text-decoration: none;
 list-style:none;
 padding: 0;

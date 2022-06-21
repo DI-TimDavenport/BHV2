@@ -1,34 +1,38 @@
 import styled from "styled-components";
 import { Stream } from "@cloudflare/stream-react";
+import SiteFooter from "./Footer";
 
 const UtilityToken = () => {
   const videoIdOrSignedUrl = "e999c90de9de869d157bda962b5adbf1";
   return (
-    <Wrapper className="container">
-      <TokenTitle>Overprism</TokenTitle>
-      <TokenContainer>
-        <VideoContainer class="img__wrap">
-          <Stream
-            controls
-            autoplay
-            loop
-            muted
-            src={videoIdOrSignedUrl}
-          ></Stream>
-        </VideoContainer>
-        <TeamName>$OPrism</TeamName>
-      </TokenContainer>
-      <TeamDetails className="syndicure-bio">
-        The currency that powers the underworld within the BucketHead ecosystem.{" "}
-        <br />
-        <br />
-        The planet Overprism was once mined from was destroyed millenia ago
-        during an uprising in the galaxy, an uprising we crushed when the
-        seperatists were close to getting out of control. <br />
-        <br /> Now the supply of refined $OPrism is said to
-        be around 20,000,000 & you can only earn them in a small number of ways.
-      </TeamDetails>
-    </Wrapper>
+    <>
+      <Wrapper className="container">
+        <TokenTitle>Overprism</TokenTitle>
+        <TokenContainer>
+          <VideoContainer class="img__wrap">
+            <Stream
+              controls
+              autoplay
+              loop
+              muted
+              src={videoIdOrSignedUrl}
+            ></Stream>
+          </VideoContainer>
+          <TeamName>$OPrism</TeamName>
+        </TokenContainer>
+        <TeamDetails className="syndicure-bio">
+          The currency that powers the underworld within the BucketHead ecosystem.{" "}
+          <br />
+          <br />
+          The planet Overprism was once mined from was destroyed millenia ago
+          during an uprising in the galaxy, an uprising we crushed when the
+          seperatists were close to getting out of control. <br />
+          <br /> Now the supply of refined $OPrism is said to
+          be around 20,000,000 & you can only earn them in a small number of ways.
+        </TeamDetails>
+      </Wrapper>
+      <SiteFooter />
+    </>
   );
 };
 

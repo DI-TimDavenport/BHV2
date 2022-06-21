@@ -4,7 +4,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Components/Home";
 import GameProgressBar from "./Components/GamePages/Progress";
 import NavBar from './Components/NavBar';
-import SiteFooter from './Components/Footer';
 import Roadmap from "./Components/Roadmap";
 import UtilityToken from "./Components/Token";
 import Gameplay from "./Components/GamePages/Gameplay";
@@ -42,7 +41,6 @@ function App() {
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </div>
-            <SiteFooter />
           </div>
         </div>
       </div>
