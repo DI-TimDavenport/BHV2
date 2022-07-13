@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import { Routes, Route, Link } from "react-router-dom";
 import Hats from "../../Data/hats";
-import HeavyTrooperData from "../../Data/heavybhpreviews";
-import UniqueTrooperData from "../../Data/uniquebhpreviews";
+// import HeavyTrooperData from "../../Data/heavybhpreviews";
+// import UniqueTrooperData from "../../Data/uniquebhpreviews";
 import SiteFooter from "../Footer";
 
 const HatImages = () => {
@@ -158,9 +158,9 @@ margin-top:0rem;
   font-size:4.5rem;
 `;
 
-const CollDescription = styled.p`
-  text-align: center;
-`;
+// const CollDescription = styled.p`
+//   text-align: center;
+// `;
 
 const GridWrapper = styled.div`
   display: grid;
