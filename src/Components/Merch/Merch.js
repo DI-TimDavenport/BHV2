@@ -34,57 +34,57 @@ const HatImages = () => {
   );
 };
 
-const HeavyTrooper = () => {
-  return (
-    <Wrapper>
-      <CollDescription>Total in collection: 815</CollDescription>
-      <GridWrapper>
-        {HeavyTrooperData.map(({ id, name, image }) => {
-          return (
-            <ImageContainer key={id} class="img__wrap">
-              <PreviewImages
-                src={image}
-                alt="BH"
-                className="gen0-collection-images"
-              ></PreviewImages>
-              <TextContainer class="img__description_layer">
-                {/* <ImageDescription class="img__description">
-                  {name}
-                </ImageDescription> */}
-              </TextContainer>
-            </ImageContainer>
-          );
-        })}
-      </GridWrapper>
-    </Wrapper>
-  );
-};
+// const HeavyTrooper = () => {
+//   return (
+//     <Wrapper>
+//       <CollDescription>Total in collection: 815</CollDescription>
+//       <GridWrapper>
+//         {HeavyTrooperData.map(({ id, name, image }) => {
+//           return (
+//             <ImageContainer key={id} class="img__wrap">
+//               <PreviewImages
+//                 src={image}
+//                 alt="BH"
+//                 className="gen0-collection-images"
+//               ></PreviewImages>
+//               <TextContainer class="img__description_layer">
+//                 {/* <ImageDescription class="img__description">
+//                   {name}
+//                 </ImageDescription> */}
+//               </TextContainer>
+//             </ImageContainer>
+//           );
+//         })}
+//       </GridWrapper>
+//     </Wrapper>
+//   );
+// };
 
-const Unique = () => {
-  return (
-    <Wrapper>
-      <CollDescription>Total in collection: 32</CollDescription>
-      <GridWrapper>
-        {UniqueTrooperData.map(({ id, name, image }) => {
-          return (
-            <ImageContainer key={id} class="img__wrap">
-              <PreviewImages
-                src={image}
-                alt="BH"
-                className="gen0-collection-images"
-              ></PreviewImages>
-              <TextContainer class="img__description_layer">
-                {/* <ImageDescription class="img__description">
-                  {name}
-                </ImageDescription> */}
-              </TextContainer>
-            </ImageContainer>
-          );
-        })}
-      </GridWrapper>
-    </Wrapper>
-  );
-};
+// const Unique = () => {
+//   return (
+//     <Wrapper>
+//       <CollDescription>Total in collection: 32</CollDescription>
+//       <GridWrapper>
+//         {UniqueTrooperData.map(({ id, name, image }) => {
+//           return (
+//             <ImageContainer key={id} class="img__wrap">
+//               <PreviewImages
+//                 src={image}
+//                 alt="BH"
+//                 className="gen0-collection-images"
+//               ></PreviewImages>
+//               <TextContainer class="img__description_layer">
+//                 {/* <ImageDescription class="img__description">
+//                   {name}
+//                 </ImageDescription> */}
+//               </TextContainer>
+//             </ImageContainer>
+//           );
+//         })}
+//       </GridWrapper>
+//     </Wrapper>
+//   );
+// };
 
 const Merch = () => {
   return (
