@@ -15,6 +15,7 @@ import NotFound from "./Components/NotFound";
 import TheTeam from "./Components/TheTeam";
 import CollectionsGen0 from "./Components/Collections/CollectionsGen0";
 import CollectionsSS from "./Components/Collections/CollectionsSS";
+import Merch from "./Components/Merch/Merch";
 
 function App() {
   return (
@@ -37,6 +38,8 @@ function App() {
                 <Route path="/progress" element={<GameProgressBar />} />
                 <Route path="/staking" element={<Home />}  />
                 <Route path="/token" element={<UtilityToken />} />
+                <Route path="/merch" element={<Merch />} />
+                <Route path="/merch/*" element={<Merch />} />
                 <Route path="/team" element={<TheTeam />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>

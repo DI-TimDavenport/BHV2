@@ -50,6 +50,9 @@ const NavBar = () => {
               <Nav.Link eventKey={2} as={Link} to="/token">
                 $Token
               </Nav.Link>
+              <Nav.Link eventKey={3} as={Link} to="/merch">
+                Merch
+              </Nav.Link>
             </Nav>
             <Nav className="social-links">
               <Nav.Link href="https://discord.gg/bucketheadstudios">

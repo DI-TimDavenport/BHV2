@@ -57,7 +57,6 @@ const GameProgressBar = () => {
       </Wrapper>
       <SiteFooter />
     </>
-
   );
 };
 

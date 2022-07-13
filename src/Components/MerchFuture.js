@@ -57,11 +57,11 @@ const Thumbnail = styled.img`
   box-shadow: 3px 3px 10px #000;
 `;
 
-const Collections = () => {
+const MerchFuture = () => {
   const [imgSrc, setImgSrc] = useState();
-  const [imgSSSrc, setSSImgSrc] = useState();
+  const [imgSSSrc, setComingSoonImgSrc] = useState();
 
-  const BHImages = [
+  const MerchImages = [
     "https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/d4aa389a-0789-42db-0042-8737ddb9bf00/previewimages",
     "https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/ff3ed493-7596-4a65-2d17-b42f2a924e00/previewimages",
     "https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/62d25cff-a13f-42bd-d75f-4a1a27b98800/previewimages",
@@ -69,31 +69,31 @@ const Collections = () => {
     "https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/0f31b3bd-7971-4c85-40b9-824feb5b4200/previewimages",
   ];
 
-  const SSImages = [
+  const ComingSoonImages = [
     "https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/0adc7226-98a1-4639-5dce-317c7b9f7500/previewimages",
-    "https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/21fd306d-d251-4ff6-3388-d03494f95500/previewimages",
-    "https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/21fd306d-d251-4ff6-3388-d03494f95500/previewimages",
-    "https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/c7dd821f-de5c-44b8-9fac-a9dcd1f7f000/previewimages",
-    "https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/4ea3164f-e6e4-417a-2eff-2c7fbfe70500/previewimages",
+    // "https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/21fd306d-d251-4ff6-3388-d03494f95500/previewimages",
+    // "https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/21fd306d-d251-4ff6-3388-d03494f95500/previewimages",
+    // "https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/c7dd821f-de5c-44b8-9fac-a9dcd1f7f000/previewimages",
+    // "https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/4ea3164f-e6e4-417a-2eff-2c7fbfe70500/previewimages",
   ];
 
   useEffect(() => {
-    setImgSrc(BHImages[Math.floor(Math.random() * 5)]);
+    setImgSrc(MerchImages[Math.floor(Math.random() * 5)]);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
-    setSSImgSrc(SSImages[Math.floor(Math.random() * 5)]);
+    setComingSoonImgSrc(ComingSoonImages[Math.floor(Math.random() * 1)]);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <>
     <Wrapper className="container">
-      <CollectionTitle>BucketHead Studios Collections</CollectionTitle>
+      <CollectionTitle>BucketHead Studios Merch</CollectionTitle>
       <CollList>
         <CollListItem className="ListItem">
           {" "}
-          <Link to="/collections/Gen0/standard">
+          <Link to="/merch/hats">
             <Thumbnail
               className="preview-thumbnail"
               src={imgSrc}
@@ -104,7 +104,7 @@ const Collections = () => {
         </CollListItem>
         <CollListItem className="ListItem">
           {" "}
-          <Link to="/collections/solsabers/nft">
+          <Link to="/merch">
             <Thumbnail
               className="preview-thumbnail"
               src={imgSSSrc}
@@ -124,6 +124,6 @@ const Collections = () => {
   );
 };
 
-export default Collections;
+export default MerchFuture;
 
 

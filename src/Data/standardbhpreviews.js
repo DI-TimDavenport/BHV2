@@ -1,7 +1,8 @@
+
 const StandardTrooper = [
   {
     "id": { "$oid": "bh1" },
-    // "name": "Helmet Outline",
+    "name": "Helmet Outline",
     "image": "https://imagedelivery.net/RT_RPMu352DnmQo9WAcrJw/1f3349bc-fa85-49f1-77cf-3e256ea66c00/previewimages"
   },
   {
